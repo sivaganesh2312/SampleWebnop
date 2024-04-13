@@ -12,7 +12,7 @@ pipeline {
                 sh 'dotnet build SampleMVC.sln'
                 sh 'dotnet test SampleMVC.sln'
                 sh 'dotnet publish -c Release StudentsWeb/StudentsWeb.csproj -o published/'
-                zip zipFile: 'nop.web.zip',
+                zip zipFile: 'samplemvc.zip',
                       archive: true,
                       dir: './published',
                       overwrite: true
