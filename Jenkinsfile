@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('vcs') {
             steps {
-                git branch: 'main',
+                git branch: 'dev',
                     url: 'https://github.com/sivaganesh2312/SampleWebnop.git'
             }
         }
