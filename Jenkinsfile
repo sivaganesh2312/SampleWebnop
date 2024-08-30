@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'nop' }
     stages {
         stage('vcs') {
             steps {
@@ -13,7 +13,7 @@ pipeline {
                     sh 'dotnet test SampleMVC.sln'
                     sh 'dotnet publish -c Release StudentsWeb/StudentsWeb.csproj -o published/'
                     
-                }
+                
                 
             }
         }
