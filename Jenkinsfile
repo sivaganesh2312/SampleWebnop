@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('vcs') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/dummyrepos/SampleWeb.git'
+                git branch: 'dev',
+                    url: 'https://github.com/sivaganesh2312/SampleWebnop.git'
             }
         }
         stage('build and analysis') {
